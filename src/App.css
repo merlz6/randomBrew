@@ -1,33 +1,33 @@
-.App {
+
+/*This will be largest media query  */
+body {
   text-align: center;
+  background-color: blanchedAlmond;
+}
+  /* * {
+    border:1px solid black;
+  } */
+.todaysBeerH2{
+  margin-top: 75px;
+  border-bottom: .5px solid grey;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.beerPicture {
+  text-align: center;
+  height:600px;
+  width:350px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sideBySide {
+  justify-content: space-around;
+  display:flex;
+  flex-direction: row;
+  margin:50px 200px;
+    border:1px solid black;
 }
-
-.App-link {
-  color: #61dafb;
+.rightSideInfo {
+  display: block;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+small {
+  margin:0 5px;
 }
