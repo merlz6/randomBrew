@@ -43,6 +43,7 @@ class RandomBeer extends Component {
             image_url:'',
             abv:'',
             first_brewed:'',
+            description:''
     }
 
   }
@@ -56,7 +57,8 @@ class RandomBeer extends Component {
         food_pairing:result[0].food_pairing,
         image_url:result[0].image_url,
         abv:result[0].abv,
-        first_brewed:result[0].first_brewed
+        first_brewed:result[0].first_brewed,
+        description:result[0].description
       })
       }
     )
@@ -70,8 +72,14 @@ class RandomBeer extends Component {
         <div className="rightSideInfo">
         <h2 className="todaysBeerH2"> Your Random Beer </h2>
         < br />
-        <h2>Name:<small>{this.state.beerName}</small> </h2>
-        <h3>First Brewed In:<small>{this.state.first_brewed}</small> </h3>
+        <h2>{this.state.beerName} </h2>
+        <h4>First Brewed In:<small>{this.state.first_brewed}</small> </h4>
+
+
+        <h4> ABV: <small> {this.state.abv} </small> %</h4>
+        <h4> {this.state.tagline}</h4>
+        <p className="description"> {this.state.description} </p>
+        < br />
         <h3>Great with these dishes: </h3>
         <ul>
           <li>
@@ -84,9 +92,6 @@ class RandomBeer extends Component {
             {this.state.food_pairing[2]}
           </li>
         </ul>
-        <h3> ABV: <small> {this.state.abv} </small> %</h3>
-        <h4>Tagline:<small> {this.state.tagline} </small></h4>
-
         </div>
         </div>
 

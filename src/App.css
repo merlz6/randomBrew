@@ -8,7 +8,7 @@ body {
     border:1px solid black;
   } */
 .todaysBeerH2{
-  margin-top: 75px;
+  margin-top: 40px;
   border-bottom: .5px solid grey;
 }
 
@@ -27,8 +27,14 @@ body {
     border:1px solid black;
 }
 .rightSideInfo {
+  padding:10px;
   display: block;
+  border: 1px solid black;
 }
 small {
   margin:0 5px;
+}
+
+.description {
+  width:400px;
 }
